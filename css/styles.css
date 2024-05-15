@@ -37,24 +37,49 @@ main{
     margin: 1rem;  
 }
 .navbar{
+    width: 100%;
     background-color: red;
-    display: flex;
-    flex-direction: row;
-    align-items: end;
 }
 .formulario{
-    left: 10%;
-    display: inline-block;
-    height: 2rem;
-    width: 80%;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 10rem;
+    width: 100%;
     background-color: rebeccapurple;
 }
 .buscador{
-    position: relative;
-    /* left: 2em; */
-    height: 100%; width: 100%;
+    height: 1em;
+    background-color: salmon;
+    display: inline-block;
+    grid-column: 1/2;
 }
 .buttons{
     height: 5em; width: 5em;
+}
+
+
+
+.gridtest{
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.gridtest div{
+    display: inline-block;
+    /* width: 2rem; height: 2rem; */
+}
+
+.item1{
+    background-color: lightyellow;
+    grid-column: 1/2;
+}
+
+.item2{
+    background-color: lightblue;
+    grid-column: 2/8;
+}
+.item3{
+    background-color: lightcoral;
+    grid-column: 8/9;
 }
