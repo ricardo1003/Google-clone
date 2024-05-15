@@ -5,7 +5,7 @@ body{
 }
 
 header{
-    background-color: firebrick;
+    background-color: lightcoral;
     height: 3em;
     display: flex;
     justify-content: end;
@@ -15,4 +15,5 @@ header a{
     display: inline-block;
     position: relative;
     margin:1em 0.25em;
+    background-color: lightblue;
 }
