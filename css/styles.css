@@ -1,8 +1,20 @@
 body{
     background-color: #202124;
     margin: 0;
+    /* display: flex; */
 }
 
 header{
     background-color: firebrick;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 97vh;
+}
+.contenedor{
+    height: 20em; width: 100%;
+    background-color: lightgreen;
+    position: relative;
 }
