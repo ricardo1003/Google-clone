@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #202124;
@@ -23,16 +26,34 @@ main{
 }
 .contenedor :nth-child(n){
     display: inline-block;
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 .logo{
-    font-size: 1em;
+    font-size: 5em;
+    text-align: center;
     height: 1em;
-    background-color: lightcoral;    
+    background-color: lightcoral;  
+    margin: 1rem;  
 }
 .navbar{
-    height: 5em; width: 5em;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.formulario{
+    left: 10%;
+    display: inline-block;
+    height: 2rem;
+    width: 80%;
+    position: relative;
+    background-color: rebeccapurple;
+}
+.buscador{
+    position: relative;
+    /* left: 2em; */
+    height: 100%; width: 100%;
 }
 .buttons{
     height: 5em; width: 5em;
