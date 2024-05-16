@@ -60,7 +60,7 @@ header a:hover{
     -o-transition: 0.05s;
 }
 .appbg1{
-    left: auto; right: 3px; top: -4px; bottom: auto;
+    left: auto; right: 12.25px; top: -4px; bottom: auto;
 }
 .appbg:hover{
     transform: scale(1.75);
