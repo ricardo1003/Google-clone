@@ -23,3 +23,7 @@ header a{
     margin:1.5em 0.25em;
     min-width: 1em;
 }
+
+header a:hover{
+    text-decoration: underline;
+}
