@@ -52,7 +52,33 @@ main{
 }
 
 footer{
+    padding: 4px;
+    font-size: 14px;
     grid-row: 12/13;
     background-color: lightblue;
-    /* height:4rem; width: 100%; */
+}
+
+footer h1{
+    font-size: 14px;
+    background-color: rgb(128, 159, 170);
+}
+footer nav{
+    background: rgb(128, 159, 170);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer nav p{
+    background-color: rgb(95, 118, 126);
+    margin: 0.25rem;
+}
+footer nav p a{
+        background-color: rgb(77, 97, 103);
+}
+
+@media (max-width:652.16px) {
+    footer nav {
+        justify-content: center;
+    }
 }
