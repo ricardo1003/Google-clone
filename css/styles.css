@@ -2,18 +2,106 @@
     box-sizing: border-box;
 }
 body{
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #202124;
-    margin: 0;
     display: grid;
     grid-template-rows: repeat(12,1fr);
     height: 100vh;
+    background-color: #202124;
+    margin: 0;
+    max-width: 100%;
 }
 
 header{
-    background-color: firebrick;
+    background-color: lightcoral;
     grid-row: 1/2;
+    display: flex;
+    justify-content: end;
 }
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: .75em;
+    display: inline-block;
+    position: relative;
+    background-color: lightseagreen;
+    margin:1.5em 0.25em;
+    min-width: 1em;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+.icono{
+    margin-left: 2em; margin-right: 1em;
+    top: -0.25em;
+    max-width: 2em;
+}
+.aplicaciones{
+    z-index: 2;
+    background-color: #fff;
+    color: white;
+    max-width: 1.5em;
+}
+.appbg{
+    z-index: 1;
+    display: inline-block;
+    left:0;
+    top: -1em;
+    position: absolute;
+    width: 1.5em;
+    height: 1.5em;
+    transition: 0.05s;
+    
+    -webkit-transition: 0.05s;
+    -moz-transition: 0.05s;
+    -ms-transition: 0.05s;
+    -o-transition: 0.05s;
+}
+.appbg1{
+    left: auto; right: 3px; top: -4px; bottom: auto;
+}
+.appbg:hover{
+    transform: scale(1.75);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.125);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    -o-transform: scale(1.75);
+}
+.appbg1:hover{
+    transform: scale(1.25);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+.perfil{
+    margin-right: 1em;
+    background: url(../assets/images/ricardo\ pfp.jpg);
+    background-size: 2em;
+    width: 2em;
+    height: 2em;
+    bottom: .5em;
+    border-radius:100%;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    -ms-border-radius:100%;
+    -o-border-radius:100%;
+}
+
+
 main{
     grid-row: 3/11;
     display: flex;
