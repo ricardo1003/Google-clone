@@ -27,3 +27,42 @@ header a{
 header a:hover{
     text-decoration: underline;
 }
+
+.icono{
+    top: -0.25em;
+    max-width: 2em;
+}
+.aplicaciones{
+    z-index: 2;
+    background-color: #fff;
+    color: white;
+    max-width: 1.5em;
+}
+.appbg{
+    z-index: 1;
+    display: inline-block;
+    left:0;
+    top: -1em;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.125);
+    width: 1.5em;
+    height: 1.5em;
+    transition: 0.05s;
+
+    -webkit-transition: 0.05s;
+    -moz-transition: 0.05s;
+    -ms-transition: 0.05s;
+    -o-transition: 0.05s;
+}
+.appbg:hover{
+    transform: scale(2);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+}
