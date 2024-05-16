@@ -22,29 +22,28 @@ main{
     background-color: lightgreen;
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 6,1fr;
+    grid-template-rows: repeat(12,1fr);
 }
 .logo{
     font-size: 5em;
     text-align: center;
     grid-column: 1/7;
-    height: 1em;
+    grid-row: 1/6;
+    /* height: 1em; */
     background-color: lightcoral;  
     margin: 1rem;  
 }
 .barra{
-    height: 2rem;
+    /* height: 2rem; */
     grid-column: 2/6;
-    /* position: relative; */
-    background-color: rebeccapurple;
+    grid-row: 6/7;
 }
 .buscador{
     position: relative;
-    /* left: 2em; */
     height: 100%; width: 100%;
 }
 .buttons{
     grid-column: 3/5;
-    height: 5em;
+    grid-row: 8/9;
     background-color: lightseagreen;
 }
