@@ -2,54 +2,66 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 14px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: grid;
-    grid-template-rows: repeat(12,1fr);
     height: 100vh;
-    background-color: #202124;
-    margin: 0;
     max-width: 100%;
+
+    display: grid;
+    margin: 0;
+
+    background-color: #202124;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    grid-template-rows: repeat(12,1fr);
 }
 
 header{
-    grid-row: 1/2;
     display: flex;
     justify-content: end;
+
+    grid-row: 1/2;
 }
 
 header a{
-    color: white;
-    text-decoration: none;
-    font-size: .75em;
+    min-width: 1em;
+
+    margin:1.5em 0.25em;
     display: inline-block;
     position: relative;
-    margin:1.5em 0.25em;
-    min-width: 1em;
+
+    color: white;
+    font-size: .75em;
+    text-decoration: none;
 }
 header a:hover{
     text-decoration: underline;
 }
 
 .icono{
-    margin-left: 2em; margin-right: 1em;
+    margin: 1.5em 1em 0 2em;
     top: -0.25em;
     max-width: 2em;
 }
 .aplicaciones{
+     max-width: 1.5em;
+
     z-index: 2;
+
     filter: invert(1) hue-rotate(180deg); 
-    max-width: 1.5em;
 }
 .appbg{
-    z-index: 1;
-    display: inline-block;
-    left:0;
-    top: -1em;
-    position: absolute;
+    /* Estilos de borde y dimensiones */
     width: 1.5em;
     height: 1.5em;
+    /* Estilos de diseño y disposición */
+    position: absolute;
+    left:0;
+    top: -1em;
+    display: inline-block;
+    /* Estilos de texto y color */
+    /* Otras propiedades */
+    z-index: 1;
     transition: 0.05s;
     
     -webkit-transition: 0.05s;
@@ -61,9 +73,12 @@ header a:hover{
     left: auto; right: 12.25px; top: -4px; bottom: auto;
 }
 .appbg:hover{
-    transform: scale(1.75);
     border-radius: 100%;
+
     background-color: rgba(0, 0, 0, 0.125);
+
+    transform: scale(1.75);
+
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -74,8 +89,8 @@ header a:hover{
     -o-transform: scale(1.75);
 }
 .appbg1:hover{
-    transform: scale(1.25);
     border-radius: 100%;
+    transform: scale(1.25);
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
@@ -86,13 +101,16 @@ header a:hover{
     -o-transform: scale(1.25);
 }
 .perfil{
-    margin-right: 1em;
-    background: url(../assets/images/ricardo\ pfp.jpg);
-    background-size: 2em;
     width: 2em;
     height: 2em;
-    bottom: .5em;
     border-radius:100%;
+
+    bottom: .5em;
+    margin-right: 1em;
+
+    background: url(../assets/images/ricardo\ pfp.jpg);
+    background-size: 2em;
+
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
     -ms-border-radius:100%;
@@ -101,25 +119,30 @@ header a:hover{
 
 
 main{
-    grid-row: 3/11;
     display: flex;
+
+    grid-row: 3/11;
     flex-direction: column;
     justify-content: center;
 }
 .contenedor{
     height: 20em; width: 100%;
+
     margin-bottom: 10rem;
+
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(12,1fr);
 }
 .logo{
+    margin: 1rem; 
+
     font-family: "poppins";
     font-weight: 500;
     font-size: 5em;
     text-align: center;
+
     grid-column: 1/7;
     grid-row: 1/5;
-    margin: 1rem;  
 }
 .barra{
    outline: 1px solid #5f6368;
@@ -141,20 +164,20 @@ main{
     -o-border-radius: 10em;
 }
 .barra:hover{
-    background-color: #303134;
     outline: 1px solid #303134;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    background-color: #303134;
 }
 
 .buscador, .buscar, .mic, .lens{
-    background-color: transparent;
     border: none;
+    background-color: transparent;
 }
 .buscador{
-    color: white;
-    position: relative;
     height: 100%;
     width: 90%;
+    position: relative;
+    color: white;
 }
 .buscador:focus{
     outline: none;
@@ -177,10 +200,10 @@ main{
     width: 1.75em;
 }
 .barra .icono{
-    filter: invert(0.75);
     width: 3em;
     padding: 4px;
     margin: 0;
+    filter: invert(0.75);
 }
 .barra .icono:last-child{
     margin-right: 1rem;
@@ -188,10 +211,12 @@ main{
 .buttons{
     width: fit-content;
     height: 30px;
-    grid-column: 3/5;
-    grid-row: 8/9;
+
     margin: 2rem auto;
     display: flex;
+
+    grid-column: 3/5;
+    grid-row: 8/9;
     grid-template-columns: repeat(19,1fr);
 }
 .boton{
@@ -216,21 +241,26 @@ main{
     border: 1px solid #5f6368
 }
 footer{
-    color: rgb(232, 232, 232);
     font-size: 12px;
-    grid-row: 12/13;
+
     background-color: rgb(23, 23, 23);
+    color: rgb(232, 232, 232);
+
+    grid-row: 12/13;
 }
 
 footer h1{
-    font-weight: 500;
-    font-size: 12px;
     padding: 0.5em 2em;
     border-bottom: 0.8px solid rgb(49, 51, 53);
+
+    font-weight: 500;
+    font-size: 12px;
 }
 footer nav{
     padding-left: 1.5em;
+
     display: flex;
+
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -239,9 +269,10 @@ footer nav p{
     margin: .5rem;
 }
 footer nav p a{
-    color: rgb(232, 232, 232);
-    text-decoration: none;
     margin-right: 1em;
+    
+    text-decoration: none;
+    color: rgb(232, 232, 232);
 }
 /* footer nav:first-child{
     margin-left: 1.5rem;
