@@ -108,7 +108,7 @@ main{
 }
 .contenedor{
     height: 20em; width: 100%;
-    display: grid;
+    margin-bottom: 10rem;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(12,1fr);
 }
@@ -122,14 +122,19 @@ main{
     margin: 1rem;  
 }
 .barra{
-    outline: solid 1.5px rgb(95, 99, 104);
-    border-radius: 10em;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto; margin-right: auto;
-    height: 2rem; width: 70%;
-    grid-column: 2/6;
-    grid-row: 6/8;
+   outline: 1px solid #5f6368;
+   border-radius: 10em;
+   height: 2rem;
+   width: 95vw;
+   max-width: 30rem;
+
+   display: flex;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: auto;
+
+   grid-row: 6/8;
+
     -webkit-border-radius: 10em;
     -moz-border-radius: 10em;
     -ms-border-radius: 10em;
@@ -150,51 +155,57 @@ main{
     outline: none;
 }
 .buscar{
-    filter: invert(0.75);
+    width: 2rem;
+    color: #9aa0a6;
+    filter: invert(0.5);
     border-radius: 1.5em 1px 1px 1.5em;
     -webkit-border-radius: 1.5em 1px 1px 1.5em;
     -moz-border-radius: 1.5em 1px 1px 1.5em;
     -ms-border-radius: 1.5em 1px 1px 1.5em;
     -o-border-radius: 1.5em 1px 1px 1.5em;
-    -webkit-filter: invert(0.75);
+    -webkit-filter: invert(0.5);
 }
 .lupa{
-    width: 1.5em;
+    width: 1em;
 }
 .mic, .lens{
-    width: 2em;
+    width: 1.75em;
 }
 .barra .icono{
     filter: invert(0.75);
-    width: 2em;
+    width: 3em;
+    padding: 4px;
     margin: 0;
 }
+.barra .icono:last-child{
+    margin-right: 1rem;
+}
 .buttons{
-    grid-column: 2/6;
+    width: fit-content;
+    height: 30px;
+    grid-column: 3/5;
     grid-row: 8/9;
-    display: grid;
+    margin: 2rem auto;
+    display: flex;
     grid-template-columns: repeat(19,1fr);
-    /* justify-content: space-evenly; */
 }
 .boton{
+    width: 8rem;
+    border-radius:4px;
+
+    margin: 0 4px;
+    align-content: center;
+
+    background-color: rgb(48, 49, 52);
     color:white;
     text-decoration: none;
-    padding-top: 6px;
     text-align: center;
-    font-size: 13px;
-    background-color: rgb(48, 49, 52);
-    border-radius:4px;
+    font-size: 12px;
 
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
     -ms-border-radius:4px;
     -o-border-radius:4px;
-}
-.boton1{
-    grid-column: 4/10;
-}
-.boton2{
-    grid-column: 11/17;
 }
 footer{
     color: rgb(232, 232, 232);
